@@ -1,29 +1,82 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 * {margin: 0; padding: 0;}
 li {list-style: none;}
-a {text-decoration: none; color: #333;}
+a {text-decoration: none; color: #fff;}
 html, body {
-    color: #333;
+    color: #ffffff;
     min-width: 1280px;
+    background-color: #000;
+}
+
+section h3 {
+    font-family: '국립박물관문화재단클래식B';
+}
+section h2 {
+    font-family: '국립박물관문화재단클래식B';
+}
+section p {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    color: rgba(238, 238, 238, 0.468);
+}
+section a {
+    font-family: '국립박물관문화재단클래식B';
+}
+section li {
+    font-family: '국립박물관문화재단클래식B';
+}
+section dd {
+    font-family: 'NEXON Lv1 Gothic OTF';
+}
+section dt {
+    font-family: 'NEXON Lv1 Gothic OTF';
+}
+section h4{
+    font-family: '국립박물관문화재단클래식B';
+}
+section footer ul li {
+    font-family: '국립박물관문화재단클래식B';
 }
 
 /* header */
 header {
     height: 80px;
     line-height: 80px;
+    background-color: white;
+    
 }
 header div {
     width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    
 }
 header div h1 a {
     font-size: 25px;
+    color: #000;
+    font-family: '국립박물관문화재단클래식B';
 }
 header div a {
     font-size: 20px;
+    color: black;
+    font-family: 'NEXON Lv1 Gothic OTF';
 }
 
 /* .main_visual */
@@ -33,6 +86,7 @@ header div a {
     height: calc(100vh - 80px);
     /* 높이 : 브라우저전체높이 빼기 헤더값 */
     position: relative;
+    overflow: hidden;
 }
 .main_visual figure {
     width: 100%;
@@ -40,8 +94,8 @@ header div a {
 }
 .main_visual figure img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* height: 100%;
+    object-fit: cover; */
 }
 .main_visual .title {
     width: 1280px;
@@ -56,23 +110,30 @@ header div a {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
+    text-align: center;
 }
 .main_visual .title h2 {
     width: 100%;
     font-size: 60px;
+    text-align: center;
 }
 .main_visual .title p {
     width: 100%;
     font-size: 30px;
     margin-bottom: 40px;
+    font-family: '국립박물관문화재단클래식B';
+    color: #fff;
 }
 .main_visual .title a {
     color: #fff;
     width: 150px;
     height: 50px;
     line-height: 50px;
-    background-color: rgba(122, 70, 70, 0.303);
+    background-color: #fe0000;
     text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 /* best_v */
 .best_v {
@@ -120,6 +181,7 @@ header div a {
 .best_v .cont .info p:nth-of-type(2) {
     margin-top: 20px;
     margin-bottom: 40px;
+    color: white;
 }
 .best_v .cont .info dl {
     display: flex;
@@ -135,14 +197,14 @@ header div a {
 .best_v .cont .info ul li a {
     height: 45px;
     line-height: 45px;
-    border: 1px solid rgba(222, 150, 150, 0.749);
+    border: 1px solid #fff;
     box-sizing: border-box;
     display: block;
     padding: 0 25px;
     margin-right: 10px;
 }
 .best_v .cont .info ul li:nth-child(1) a {
-    background-color: rgb(127, 124, 124);
+    background-color: #fe0000;
     color: #fff;
 }
 /* .motion */
@@ -176,9 +238,9 @@ header div a {
     box-sizing: border-box;
 }
 .motion .list li.on {
-    box-shadow: 2px 3px 15px rgba(255, 0, 0, 0.4);
+    box-shadow: 2px 3px 15px #fe0000;
     /* 그림자 : x축 y축 블러 색상 */
-    background-color: rgb(255, 50, 50);
+    background-color: #fe0000;
     color: #fff;
     border: 0;
 }
@@ -236,7 +298,7 @@ header div a {
 
 /* .g_ver05 */
 .g_ver05 {
-    background-color: #eee;
+    /* background-color: #fff; */
     padding: 100px 0;
 }
 .g_ver05 .title {
@@ -256,6 +318,7 @@ header div a {
     margin-top: 40px;
     margin-bottom: 10px;
     display: block;
+    color: rgba(238, 238, 238, 0.316);
 }
 .g_ver05 .cont {
     width: 1280px;
@@ -265,7 +328,7 @@ header div a {
 }
 .g_ver05 .cont .items {
     width: 49%;
-    background-color: #fff;
+    /* background-color: #fff; */
     display: flex;
     align-items: center;
 }
@@ -285,9 +348,11 @@ header div a {
 }
 .g_ver05 .cont .items .info p {
     font-size: 14px;
+    color: rgba(238, 238, 238, 0.468);
 }
 .g_ver05 .cont .items .info h4 {
     font-size: 30px;
+    color: #fff;
 }
 
 /* .about */
@@ -352,7 +417,7 @@ footer ul li {
 }
 footer ul li a {color: #fff;}
 footer ul li:first-child{
-    background-color: rgb(184, 213, 218);
+    background-color: #30475E;
     font-weight: bold;
 }
 footer ul li:first-child a {
@@ -362,4 +427,8 @@ footer p {
     margin-top: 20px;
     color: rgba(255, 255, 255, 0.463);
     font-size: 14px;
+}
+.main {
+    /* background: url('../Images/FS.png'); */
+    background-attachment: fixed;
 }

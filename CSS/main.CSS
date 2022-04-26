@@ -22,6 +22,7 @@ html, body {
     color: #ffffff;
    /*  min-width: 1280px; */
     background-color: #000;
+    overflow-x: hidden; /* 추가 */
 }
 
 section h3 {
@@ -281,7 +282,7 @@ header div a {
     padding: 30px;
 }
 .motion .list_cont .items .info h4 {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 .motion .list_cont .items .info dl {
@@ -351,7 +352,7 @@ header div a {
     color: rgba(238, 238, 238, 0.468);
 }
 .g_ver05 .cont .items .info h4 {
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -395,7 +396,7 @@ header div a {
     margin-bottom: 5px;
 }
 .about .cont .info div dl dd {
-    font-size: 20px;
+    font-size: 13px;
 }
 .about .cont .info div p {
     margin-bottom: 5px;
@@ -499,3 +500,39 @@ footer p {
         overflow-x: hidden;
     }
 }/* 해상도 960이하 */
+
+/* 해상도 640px이하 */
+@media screen and (max-width:640px) {
+    section .title h3 {
+        font-size: 30px !important;
+    }
+    section .title p {
+        font-size: 16px !important;
+    }
+    section .info h4 {
+        font-size: 22px !important;
+    }
+    .main_visual .title h2 {
+        font-size: 40px;
+    }
+
+    .motion .list_cont .items .info {
+        padding: 15px;
+    }
+    .motion .list_cont .items .info dl dt {
+        width: 30%;
+    }
+    .motion .list_cont .items .info dl dd {
+        width: 70%;
+        word-break: break-all;
+        /* 줄바꿈 : 글자별 */
+    }
+    .g_ver05 .cont .items figure {
+        height: 300px;
+    }
+    .about .cont .info div h4 {margin-bottom: 10px;}
+    .about .cont .info div p {font-size: 16px;}
+    .about .cont .info div dl dt {font-size: 16px;}
+    .about .cont .info div dl dd {font-size: 16px;}
+
+}/* 해상도 640px 이하 */
